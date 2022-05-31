@@ -1,0 +1,69 @@
+#include<iostream.h>
+#include<conio.h>
+
+class A
+{
+	protected:
+		int x;
+	public:
+		void show()
+		{
+			cin>>x;
+			cout<<x;
+		}
+};
+class B: virtual public A
+{
+	protected:
+		int y;
+	public:
+		void get()
+		{
+			cin>>y;
+			cout<<x+y;
+		}
+};
+class C:  public virtual A
+{
+	protected:
+		int z;
+	public:
+		void fun()
+		{
+			cin>>z;
+			cout<<x+z;
+		}
+};
+class D:virtual public A
+{
+	protected:
+		int n;
+	public:
+		void dis()
+		{
+			cin>>n;
+			cout<<x+n;
+		}
+};
+class E:public B,public C,public D
+{
+	protected:
+		int m;
+	public:
+		void play()
+		{
+			 cin>>m;
+			cout<<y+z+n+m;
+		}
+};
+void main()
+{
+	clrscr();
+	E obj;
+	obj.show();
+	obj.get();
+	obj.fun();
+	obj.dis();
+	obj.play();
+	getch();
+}
