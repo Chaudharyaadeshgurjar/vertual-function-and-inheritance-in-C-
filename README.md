@@ -7,8 +7,6 @@ VIRTUAL FUNCTION:-
                   you can call a virtual function for that object and execute the derived class’s version of the function
 --------------MULTIPATH INHERITANCE:-
                        Multipath Inheritance in C++ is derivation of a class from other derived classes, which are derived from the same base class.
-             
                        This type of inheritance involves other inheritance like multiple, multilevel,
-               
                        hierarchical etc. Here class D is derived from class B and C.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
